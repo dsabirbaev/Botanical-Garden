@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botanical Garden</title>
+    <link rel="icon" href="./assets/images/fav-icon.svg">
+    <!-- tailwind script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="fixed top-0 left-0 w-full backdrop-blur-[10px] z-50 shadow-lg">
+        <div class="container mx-auto  md:px-5">
+            <nav class="nav flex items-center justify-between h-[88px] ">
+                <a href="#"><img class="w-[215px] lg:w-auto" src="./assets/images/logo.svg" alt="logo"></a>
+                <ul
+                    class="nav__list hidden lg:flex items-center gap-x-10 text-[#414840] font-bold text-[14px] uppercase">
+                    <li><a class="nav__list--link tracking-[15%]" href="#">Home</a></li>
+                    <li><a class="nav__list--link tracking-[15%]" href="#">Visit</a></li>
+                    <li><a class="nav__list--link tracking-[15%]" href="#">Exhibitions</a></li>
+                    <li><a class="nav__list--link tracking-[15%]" href="#">Programs & Events</a></li>
+                    <li><a class="nav__list--link tracking-[15%]" href="#">Store</a></li>
+                    <li><button
+                            class="uppercase hover:bg-[#475F45] hover:text-white duration-150 px-[30px] py-[15px] border-2 border-solid border-[#475F45]">Membership</button>
+                    </li>
+                </ul>
+                <img class="lg:hidden" src="./assets/icons/menu.svg" alt="menu">
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro">
+            <div class="container mx-auto md:px-5">
+                <div
+                    class="wrapper min-h-[764px] md:min-h-[1093px] lg:min-h-[919px] flex flex-col lg:flex-row gap-y-[56px] md:gap-y-[64px] lg:gap-y-0 items-center justify-between pt-[136px] lg:pt-0 pb-[70px] lg:pb-0">
+                    <div class="intro-content text-center lg:text-left  w-[343px] md:w-[458px] lg:w-[528px]">
+                        <h1
+                            class="font-libre font-normal text-[34px] md:text-[45px] lg:text-[57px] max-w-[316px] md:max-w-[458px] lg:max-w-[528px]  leading-[30px] md:leading-[49.5px] lg:leading-[62.7px] capitalize text-[#343D33]  mb-4 md:mb-6 lg:mb-4">
+                            A beatiful adventure awaits</h1>
+                        <p
+                            class="font-light text-[20px] md:text-[22px] lg:text-[25px] leading-[37.5px] text-[#414840] max-w-[470px] capitalize mb-6 md:mb-8">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt facilisis nunc</p>
+                        <div class="flex gap-x-4 justify-center lg:justify-start">
+                            <button
+                                class="uppercase px-[30px] py-[15px] border-2 text-[14px] border-solid border-[#475F45] hover:bg-[#475F45] hover:text-white duration-150">Buy
+                                Tickets</button>
+                            <button
+                                class="uppercase px-[30px] py-[15px] border-2 text-[14px] border-solid border-[#475F45] hover:bg-[#475F45] hover:text-white duration-150">Learn
+                                More</button>
+                        </div>
+                    </div>
+                    <img class="w-[265px] md:w-[394px] lg:w-auto" src="./assets/images/intro.jpg" alt="garden">
+                </div>
+            </div>
+        </section>
+        <section id="discover" class="bg-[#343D33] bg-discover">
+            <div class="container mx-auto md:px-5">
+                <div class="wrapper min-h-[1035px] py-[56px] md:py-[96px]">
+                    <div
+                        class="flex flex-col lg:flex-row gap-y-4 md:gap-y-10 lg:gap-y-0 text-white items-center md:items-start lg:items-center lg:gap-x-[89px] mb-10 md:mb-[60px] lg:mb-20">
+                        <img src="./assets/images/discover/plant.jpg" alt="plant" class="w-full lg:w-auto">
+                        <div class="text-center md:text-left">
+                            <h1
+                                class="font-normal text-[45px] leading-[49.5px] font-libre max-w-[417px] capitalize mb-4">
+                                Discover yourself with nature</h1>
+                            <p class="font-normal text-[20px] leading-[30px] max-w-[400px] mb-8">Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit. Tincidunt facilisis nuncLorem
+                                ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt facilisis nunc</p>
+                            <button
+                                class="uppercase hover:bg-[#475F45] hover:text-white duration-150 px-[30px] py-[15px] border-2 border-solid border-[#f1f1f1]">Learn
+                                more</button>
+                        </div>
+                    </div>
+                    <img src="./assets/images/discover/seating-area.jpg" alt="soft" class="w-full">
+                </div>
+            </div>
+        </section>
+        <section id="news" class="bg-news">
+            <div class="container mx-auto md:px-5">
+                <div class="wrapper min-h-[865px] py-[48px] md:pt-[65px] lg:pt-[96px] lg:pb-0">
+                    <div class="mb-8 md:mb-[48px] flex items-center flex-col md:items-start">
+                        <h1 class="text-[#343D33] font-libre text-[45px] font-normal mb-4">News & Updates</h1>
+                        <p class="font-bold text-[14px] tracking-[15%] text-[#475F45] flex items-center uppercase"><span
+                                class="w-[48px] md:w-[131px] bg-[#475F45] h-[2px] mr-5"></span> View all posts <img
+                                class="ml-3" src="./assets/images/news/arrow-right.svg" alt="arrow"></p>
+                    </div>
+                    <div class="flex flex-col  lg:flex-row gap-y-6 md:gap-y-10 lg:gap-x-[50px]">
+                        <div class="flex flex-col md:flex-row lg:flex-col gap-y-5 md:gap-y-0 md:gap-x-6 lg:gap-y-5">
+                            <img class="max-w-full md:max-w-[392px] lg:max-w-full"
+                                src="./assets/images/news/main-plant.jpg" alt="main">
+                            <div class="min-w-[280px] lg:max-w-[471px] text-center md:text-left">
+                                <h1 class="text-[#475F45] text-[23px] font-libre font-bold mb-[12px]">Plants Around Us
+                                </h1>
+                                <p class="font-normal text-[16px] leading-6  text-[#414840] mb-[12px]">Lorem ipsum dolor
+                                    sit amet, consectetur adipiscing elit. Tincidunt facilisis
+                                    nuncLorem ipsum dolor sit.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                                </p>
+                                <p class="font-italic text-[16px] ">December 23, 2021</p>
+                            </div>
+                        </div>
+                        <div class="news-cards flex flex-col gap-y-[41px]">
+                            <div
+                                class="news-card flex flex-col  md:flex-row items-center md:items-start gap-y-5 md:gap-y-0 gap-x-5 relative">
+                                <img class="max-w-[236px]" src="./assets/images/news/1.jpg" alt="pic">
+                                <div class="text-center md:text-left">
+                                    <h1 class="text-[#475F45] text-[23px] font-libre font-bold mb-[12px]">Lush Gardens
+                                    </h1>
+                                    <p class="font-normal text-[16px] leading-6 max-w-[354px] text-[#414840] mb-[12px]">
+                                        Lorem ipsum dolor sit amet, consectetur donec adipiscing elit. Tincidunt
+                                        facilisis nunc lorem
+                                    </p>
+                                    <p class="font-italic text-[16px] ">December 16, 2021</p>
+                                </div>
+                                <div class="absolute  w-full h-[1px] bg-[#C4C4C4] bottom-[-7%] md:bottom-[-14%] left-0">
+                                </div>
+                            </div>
+
+                            <div
+                                class="news-card flex flex-col  md:flex-row items-center md:items-start gap-y-5 md:gap-y-0 gap-x-5 relative">
+                                <img src="./assets/images/news/2.jpg" alt="pic">
+                                <div class="text-center md:text-left">
+                                    <h1 class="text-[#475F45] text-[23px] font-libre font-bold mb-[12px]">Exotic Nature
+                                    </h1>
+                                    <p
+                                        class="font-normal text-[16px] leading-6 max-w-full md:max-w-[354px] text-[#414840] mb-[12px]">
+                                        Lorem ipsum dolor sit amet, consectetur donec adipiscing elit. Tincidunt
+                                        facilisis nunc lorem
+                                    </p>
+                                    <p class="font-italic text-[16px]">November 11, 2021</p>
+                                </div>
+                                <div class="absolute  w-full h-[1px] bg-[#C4C4C4] bottom-[-7%] md:bottom-[-14%] left-0">
+                                </div>
+                            </div>
+
+                            <div
+                                class="news-card flex flex-col  md:flex-row items-center md:items-start gap-y-5 md:gap-y-0 gap-x-5 relative">
+                                <img src="./assets/images/news/3.jpg" alt="pic">
+                                <div class="text-center md:text-left">
+                                    <h1 class="text-[#475F45] text-[23px] font-libre font-bold mb-[12px]">It Starts with
+                                        Soil</h1>
+                                    <p class="font-normal text-[16px] leading-6 max-w-[354px] text-[#414840] mb-[12px]">
+                                        Lorem ipsum dolor sit amet, consectetur donec adipiscing elit. Tincidunt
+                                        facilisis nunc lorem
+                                    </p>
+                                    <p class="font-italic text-[16px]">November 3, 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-[#414840]">
+        <div class="container mx-auto md:px-5">
+            <div class="wrapper pt-[48px]">
+                <div class="text-white flex flex-col md:flex-row items-center md:items-start justify-between mb-4 gap-y-12 md:gap-y-0">
+                    <div class="max-w-full md:max-w-[269px] flex flex-col items-center md:items-start justify-center md:items-start text-center md:text-left">
+                        <img src="./assets/icons/footer-logo.svg" alt="logo" class="mb-5">
+                        <p class="font-normal text-[16px] leading-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt facilisis nuncLorem ipsum
+                            dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h1 class="text-[16px] font-normal mb-5">Sitemap</h1>
+                        <ul class="text-[14px] flex flex-col gap-y-[10px] cursor-pointer">
+                            <li>Home</li>
+                            <li>Visit</li>
+                            <li>Exhibitions</li>
+                            <li>Programs & Events</li>
+                            <li>Store</li>
+                            <li>Membership</li>
+                        </ul>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h1 class="mb-5 font-normal text-[16px]">Connect</h1>
+                        <div class="flex gap-x-8 cursor-pointer">
+                            <img src="./assets/icons/socials/twitter.svg" alt="twitter">
+                            <img src="./assets/icons/socials/facebook.svg" alt="facebook">
+                            <img src="./assets/icons/socials/linkedin.svg" alt="linkedin">
+                            <img src="./assets/icons/socials/mail.svg" alt="mail">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center font-normal text-[14px] text-white py-[30px]">
+                    © 2021 Mist Gardens. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

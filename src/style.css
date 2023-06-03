@@ -1,0 +1,24 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-libre{
+    font-family: 'Libre Baskerville', serif;
+}
+
+.bg-discover{
+    background-image: url(./assets/images/discover/bg-plant.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.bg-news{
+    background-image: url(./assets/images/news/bg-plant.svg);
+    background-repeat: no-repeat;
+    background-position: 100% -45%;
+}
